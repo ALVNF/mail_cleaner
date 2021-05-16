@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cleaner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="addRemove.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="/main.js"></script>   
+  </head>
+
+  <body onload="renderMain()">
+ 
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+      
+      <div class="mailContent">
+        <label class="mailLabel" style="font-size: 25px">Email type:</label><br>
+        <div class="RadioGroup">
+          <input type="radio" id="Gmail" name="mailType" value="Gmail" checked >
+          <label for="Gmail">Gmail</label> &nbsp;
+          <input type="radio" id="Outlook" name="mailType" value="Outlook">
+          <label for="Outlook">Outlook</label><br>
+        </div>
+          
+      </div>
+
+      <div class="pageContent">
+        <label class="pageLabel">Other Stuff:</label>
+        <a href="#" id="mainReff" onclick="renderMain()">Clear Inbox</a>
+        <a href="#" id="addRemoveReff" onclick="renderAdd()">Add / Remove</a>
+        <a href="#" id="listReff" onclick="renderList()">Show List</a>
+        
+      </div>
+
+     <!-- <div class="helpContent">
+        <a href="#" class="test"> <i class="fa fa-question-circle" aria-hidden="true" >&nbsp;&nbsp;Help</i></a>
+      </div>-->
+      
+    </div>
+
+    <div id = "main">
+
+      <div class= "side-menu"  onclick="openNav()">
+        <i class="fa fa-cogs fa-2x" aria-hidden="true" id= "gear-icon"></i>
+      </div>
+
+      <div class="container" id="container" >
+
+        <label>Email:</label>
+        <input type="text" id ="mailCleaner" required>
+ 
+        <label>Password:</label>
+        <input type="password" id="mailPasswd"  required>
+        
+        <button type="submit" class="btnStart" id="btnStart" onclick="callCleaner()">Start</button>
+
+      </div>
+            
+      
+      <div class="AddRemoveContainer" id="AddRemoveContainer" style="display: none;" >
+
+        <label>Email:</label>
+        <input type="text" id="mail2add" required>
+
+        <button type="submit" class="btnAdd-Remove" onclick="callAdd()">Add</button>
+        <button type="submit" class="btnAdd-Remove" onclick="callRemove()">Remove</button>
+
+      </div>
+
+      <div class="showListContainer" id="showListContainer" style="display: none;" >
+
+        <textarea id="mailList" class= "mailList" id="mailList" name="mailList" rows="4" cols="50" readonly></textarea>
+        
+
+      </div>
+
+      <div class= "consoleContainer" id="consoleContainer">
+        <label for="console">Console log:</label><br>
+        <textarea id="console" class= "console" name="console" rows="4" cols="50" readonly></textarea>
+      </div>
+      
+
+    </div>
+    
+
+  </body>
+</html>

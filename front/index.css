@@ -1,0 +1,259 @@
+html {
+  background: url("./img/background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+.container {
+  width: 320px;
+  height: 420px;
+  top: 350px;
+  left: 50%;
+  position: relative;
+  transform: translate(-50%, -50%);
+}
+
+.container label {
+  margin: 0;
+  padding: 0;
+  display: block;
+
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-family: "Bell MT", Bell MT;
+  color: #ffffff;
+}
+
+.container input {
+  width: 100%;
+  height: 35px;
+
+  font-size: 17px;
+  font-family: "Bell MT", Bell MT;
+
+  margin-bottom: 35px;
+  background-color: #1f2833;
+  color: #ffffff;
+  border: 0px;
+  outline: none;
+}
+
+.btnStart {
+  margin-top: 25px;
+  margin-left: 80px;
+  width: 50%;
+  height: 40px;
+
+  font-size: 23px;
+  font-family: "Bell MT", Bell MT;
+  color: #ffffff;
+
+  background-color: #1f283300;
+  border-width: 2px;
+  border-color: #60ede3;
+  border-style: solid;
+  outline: none;
+}
+
+.btnStart:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 55px #45a39d;
+  border-width: 1px;
+}
+
+.btnStart:active {
+  border-color: #45a39d;
+  box-shadow: 0px 0px 55px #60ede3;
+  border-width: 1px;
+  transform: translateY(1px);
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #dfdfdf;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 35px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #818181;
+}
+
+.side-menu {
+  color: #818181;
+  margin-top: 5px;
+  width: 20px;
+}
+
+.side-menu:hover {
+  cursor: pointer;
+  color: #dfdfdf;
+  transition: 0.3s;
+}
+
+.consoleContainer {
+  top: -50px;
+  left: 50%;
+  height: 10px;
+  position: relative;
+  transform: translate(-50%);
+  display: none;
+}
+
+.consoleContainer label {
+  color: #ffffff;
+  font-family: "Bell MT", Bell MT;
+  font-size: 25px;
+  margin-left: 5px;
+}
+
+.console {
+  margin-top: 10px;
+  width: 100%;
+  height: 250px;
+
+  background-color: #1f2833;
+  outline: none;
+  border: none;
+  resize: none;
+  cursor: default;
+
+  border-radius: 15px;
+  box-shadow: 0px 0px 55px #000000;
+
+  color: #ffffff;
+  font-family: "Bell MT", Bell MT;
+  font-size: 23px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.console::-webkit-scrollbar {
+  width: 12px;
+  background-color: #1f2833;
+}
+
+.console::-webkit-scrollbar-thumb {
+  background-color: #455970;
+}
+
+.mailContent {
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 190px;
+  max-width: 190px;
+}
+
+.RadioGroup {
+  cursor: default;
+  margin-top: 20px;
+}
+
+.mailContent input[type="radio"]:checked:after {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #0f0f0f;
+  content: "";
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+.mailContent label {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.pageContent {
+  margin-top: 55px;
+  width: 245px;
+  max-width: 245px;
+}
+
+.pageContent label {
+  color: white;
+  font-size: 25px;
+  margin-left: 10px;
+  max-width: 190px;
+}
+
+.pageContent a {
+  margin-top: 40px;
+  margin-left: 10px;
+
+  display: block;
+  justify-content: center;
+  font-size: 23px;
+  color: #ffffff;
+
+  background-color: #1f283300;
+  border-width: 2px;
+  border-color: #60ede3;
+  border-style: solid;
+  outline: none;
+}
+
+.pageContent a:hover {
+  box-shadow: 0px 0px 55px #45a39d;
+  border-width: 1px;
+}
+
+.pageContent a:active {
+  border-color: #45a39d;
+  box-shadow: 0px 0px 55px #60ede3;
+  border-width: 1px;
+  transform: translateY(1px);
+}
+
+.test {
+  margin-top: 235px;
+  color: #818181;
+  margin-left: 150px;
+}
+
+.helpContent:hover {
+  cursor: pointer;
+  color: #dfdfdf;
+  transition: 0.3s;
+}
